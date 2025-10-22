@@ -1,82 +1,37 @@
-# Lightweight React Template for KAVIA
+# MedInsure Chatbot (Frontend)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A simple web-based chatbot for answering medical insurance questions with a modern Ocean Professional theme. This is a purely frontend React app with an in-browser rule-based responder. No backend is required.
 
 ## Features
+- Single-page React UI with:
+  - Header titled "MedInsure Chatbot"
+  - Central chat window with message bubbles and timestamps
+  - Input bar with placeholder and accessible controls
+- Rule-based responses for common medical insurance topics (coverage, copays, deductibles, network, claims, prior auth, eligibility, preventive care)
+- Typing indicator (three-dot animation) with a short delay
+- Session persistence via `sessionStorage`
+- Responsive layout for mobile and desktop
+- Accessibility: semantic landmarks, aria labels, and color contrast
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+## Theme: Ocean Professional
+- Primary: `#3b82f6`
+- Secondary: `#64748b`
+- Success: `#06b6d4`
+- Error: `#EF4444`
+- Background: `#f9fafb`
+- Surface: `#ffffff`
+- Text: `#111827`
+- Design: modern, rounded corners, subtle shadows, gradient accents, smooth transitions
 
 ## Getting Started
+In the container directory:
 
-In the project directory, you can run:
+- Install: `npm install`
+- Run: `npm start` (serves at http://localhost:3000)
+- Build: `npm run build`
 
-### `npm start`
+No environment variables are required.
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Notes
+- All logic runs in the browser; there are no network calls.
+- This app provides general information only. It is not medical or legal advice.
