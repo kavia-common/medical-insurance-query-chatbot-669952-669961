@@ -1,0 +1,4 @@
+{
+    "command": "npm install",
+    "working_directory": "/tmp/kavia/workspace/code-generation/medical-insurance-query-chatbot-669952-669961/chatbot_frontend"
+}
